@@ -527,7 +527,7 @@ img {
 .wrapper{
     padding-left: 18px;
     padding-right: 18px;
-    max-width: 1200px;
+    max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -540,6 +540,17 @@ img {
 .wrapper .wrapper{
   padding-left: 0;
   padding-right: 0;
+}
+
+.wrapper--bottom--margin{
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 530px) {
+
+  .wrapper--bottom--margin {
+    margin-bottom: 3.875rem;
+  }
 }
 
 .page-section{
@@ -627,10 +638,5 @@ color: #2f5572;
   .row__medium-4 {
     float: left;
     width: 33.33%;
-  }
-
-  .row__medium-8 {
-    float: left;
-    width: 66.66%;
   }
 }
