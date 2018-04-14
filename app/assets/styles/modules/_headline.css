@@ -32,4 +32,8 @@ margin-bottom: .5em;
 &--botom-margin-large{
     margin-bottom: 1.6em;
 }
+
+&--notop--margin{
+    margin: 0;
+}
 }

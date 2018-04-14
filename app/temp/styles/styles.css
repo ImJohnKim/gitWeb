@@ -619,17 +619,21 @@ color: #2f5572;
   margin-bottom: 1.6em;
 }
 
+.headline--notop--margin{
+  margin: 0;
+}
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.row__gutters{
-  padding-right: -65px;
+.row--gutters {
+  margin-right: -65px;
 }
 
-.row__gutters >div{
+.row--gutters > div {
   padding-right: 65px;
 }
 
@@ -639,4 +643,21 @@ color: #2f5572;
     float: left;
     width: 33.33%;
   }
+
+  .row__medium-4--larger {
+    width: 37%;
+  }
+
+  .row__medium-8 {
+    float: left;
+    width: 66.66%;
+  }
+
+  .row__medium-8--smaller {
+    width: 63%;
+  }
+}
+
+.generic-content-container p{
+  line-height:1.65;
 }
