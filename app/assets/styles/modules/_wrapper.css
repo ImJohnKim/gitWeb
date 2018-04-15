@@ -6,7 +6,7 @@
     margin-right: auto;
     overflow: hidden;
     &-medium{
-        max-width: 976px;   
+        max-width: 976px;    
     }
     .wrapper{
         padding-left: 0;

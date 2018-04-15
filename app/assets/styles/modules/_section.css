@@ -3,11 +3,14 @@
     &-title{
         text-align: center;
         font-size : 2.55rem;
-        font-weight: 300;
-        
+        font-weight: 300;      
         @mixin atSmall{
             font-size : 3.75rem;
         }
+    }
+
+    &-title--blue{
+        color: $mainBlue;
     }
     strong{
         font-weight: 500;
@@ -17,11 +20,14 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: .8rem;
+
     @mixin atSmall{
-        margin-right: .5rem;
+        margin-right: .7rem;
         margin-left:0;
         display:inline-block;
         margin-bottom:0;
+        position: relative;
+        top:6px;
     }
     }
 
