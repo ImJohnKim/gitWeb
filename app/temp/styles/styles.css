@@ -324,6 +324,13 @@ html [type="button"], /* 1 */
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+}.wrapper--no-padding-until-medium{
+  padding-left: 0;
+  padding-right: 0;
+}@media (min-width: 800px){.wrapper--no-padding-until-medium{
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }.wrapper-medium{
   max-width: 976px;
 }.wrapper .wrapper{
@@ -335,16 +342,24 @@ html [type="button"], /* 1 */
     margin-bottom: 3.875rem;
   }
 }.page-section{
-padding: 1.2rem 0;
+    padding: 1.2rem 0;
 }@media (min-width: 800px){.page-section{
     padding: 4.5rem 0;
+  }
+}.page-section--no-bottom-until--medium{
+  padding-bottom: 0;
+}@media (min-width: 800px){.page-section--no-bottom-until--medium{
+    padding-bottom: 4.5rem;
   }
 }.page-section--blue{
   background-color: #2f5572;
   color:#FFF;
 }.page-section--testimonials{
-  background:url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-  background-size: cover;
+  background: #ebe6ec;
+}@media (min-width: 800px){.page-section--testimonials{
+    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+    background-size: cover;
+  }
 }.headline{
 font-size: 1.9rem;
 font-weight: 300;
@@ -378,12 +393,18 @@ margin:2rem;
   content: "";
   clear: both;
   display: table;
+}.row-top-padding{
+  padding-top:80px;
 }.row--gutters {
   margin-right: -65px;
+}.row--gutters--small{
+  margin-right: -45px;
 }.row--gutters-larger{
   margin-right: -100px;
 }.row--gutters > div {
-  padding-right: 65px;
+  padding-right: 45px;
+}.row--gutters-small > div{
+  padding-right: 45px;
 }.row--gutters-larger >div{
   padding-right: 100px;
 }.row__bottom_margin-until-medium{
@@ -403,6 +424,14 @@ margin:2rem;
     width: 66.66%;
   }.row__medium-8--smaller{
     width: 63%;
+  }
+}/* 큰 화면에서 testimonial 블럭에 같은 높이를 주는 역할을 한다.*/@media (min-width: 800px){.row-equal-height-until--medium{
+    display: -ms-flexbox;
+    display: flex;
+  }.row-equal-height-until--medium >div{
+    display: -ms-flexbox;
+    display: flex;
+    float: none;
   }
 }.generic-content-container p{
   line-height:1.65;
@@ -439,7 +468,12 @@ margin:2rem;
   }
 }.testimonials{
     background: rgba(255, 255, 255, 0.8);
+    padding: 0 18px 1px 18px;
+    margin-bottom: 98px;
+}@media (min-width: 800px){.testimonials{
     padding: 0 1.8125rem 1px 1.8125rem;
+    margin-bottom: 0;
+  }
 }.testimonials__photo{
   border-radius: 80px;
   border: 6px solid rgba(255, 255, 255, 0.8);
@@ -461,5 +495,8 @@ margin:2rem;
   font-weight:400;
   font-size:0.9375rem;
   margin:.25rem 0 1rem 0;
+}.testimonials--last{
+  margin:0;
 }
+
 
