@@ -1,6 +1,6 @@
-var $ = require('jquery');
-var Person = require('./modules/Person');
-
+var $ = require("jquery");
+var Person = require("./modules/Person");
+alert("안녕 바봉");
 var john = new Person("John Doe", "blue");
 john.greet();
 
