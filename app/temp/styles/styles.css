@@ -1365,3 +1365,13 @@ top:-80px;
             background:transparent
     }
   }
+
+.reveal-item{
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+.reveal-item--is-visible{
+        opacity: 1;
+    }
