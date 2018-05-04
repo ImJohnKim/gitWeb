@@ -8,7 +8,12 @@
         background-color: rgba($mainBlue, .55);
     }
     @mixin atMedium {
+        position: fixed;
         background-color: rgba($mainBlue, 0.7);
+    }
+
+    &--darker{
+        background-color: rgba(23, 51, 72, .77);
     }
     &__logo {
         position: absolute;
@@ -18,9 +23,13 @@
         left: 50%;
         transform: translateX(-50%) scale(.8);
         transform-origin: 50% 0%;
+        transition:transform 0.3s ease out;
         @mixin atMedium {
             left: auto;
             transform: translateX(0%);
+            .site-header--darker &{
+                transform: scale(.55);
+            }
         }
     }
     &__btn-container {

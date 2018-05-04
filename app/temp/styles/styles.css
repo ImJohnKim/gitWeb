@@ -1158,9 +1158,14 @@ top:-80px;
 @media (min-width: 800px) {
 
 .site-header {
+        position: fixed;
         background-color: rgba(47,85,114, 0.7)
 }
   }
+
+.site-header--darker{
+        background-color: rgba(23, 51, 72, .77);
+    }
 
 .site-header__logo {
         position: absolute;
@@ -1172,6 +1177,10 @@ top:-80px;
                 transform: translateX(-50%) scale(.8);
         -webkit-transform-origin: 50% 0%;
                 transform-origin: 50% 0%;
+        -webkit-transition:-webkit-transform 0.3s ease out;
+        transition:-webkit-transform 0.3s ease out;
+        transition:transform 0.3s ease out;
+        transition:transform 0.3s ease out, -webkit-transform 0.3s ease out;
     }
 
 @media (min-width: 800px) {
@@ -1181,6 +1190,10 @@ top:-80px;
             -webkit-transform: translateX(0%);
                     transform: translateX(0%)
     }
+            .site-header--darker .site-header__logo{
+                -webkit-transform: scale(.55);
+                        transform: scale(.55);
+            }
   }
 
 @media (min-width: 800px) {
@@ -1346,14 +1359,15 @@ top:-80px;
 
 .primary-nav li:last-child {
         padding-right: 0;
+        margin-right: 15px;
     }
 
 .primary-nav a {
         text-decoration: none;
-        font-weight: 300;
+        font-weight: 400;
         color: #fff;
         padding: 5px 8px;
-        font-size: .8rem;
+        font-size: 1rem;
         background: rgba(47,85,114, .5);
         display: inline-block;
     }
@@ -1364,6 +1378,10 @@ top:-80px;
             padding: 12px 0;
             background:transparent
     }
+
+            .primary-nav a.is-current-link{
+                color:#fabb69;
+            }
   }
 
 .reveal-item{
