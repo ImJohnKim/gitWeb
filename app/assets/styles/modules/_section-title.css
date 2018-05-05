@@ -2,25 +2,20 @@
   font-size: 2.55rem;
   font-weight: 300;
   text-align: center;
-
   @mixin atSmall {
     font-size: 3.75rem;
   }
-
   strong {
     font-weight: 500;
   }
-
   &--blue {
     color: $mainBlue;
   }
-
   &__icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: .6rem;
-
     @mixin atSmall {
       position: relative;
       top: 8px;
@@ -30,12 +25,13 @@
       display: inline-block;
     }
   }
-&--less-margin{
-  margin-bottom: .6rem;
-  font-size: 2rem;
-  @mixin atSmall{
-font-size: 3.75rem;
-margin-bottom: 1.3rem;
+  &--less-margin {
+    margin-top: 0;
+    margin-bottom: .6rem;
+    font-size: 2rem;
+    @mixin atSmall {
+      font-size: 3.75rem;
+      margin-bottom: 1.3rem;
+    }
   }
-}
 }
